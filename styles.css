@@ -1,0 +1,91 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    --spacing-100: 8px;
+    --spacing-150: 12px;
+    --spacing-200: 24px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: var(--yellow);
+    height: 100vh;
+    font-family: Figtree, sans-serif;
+}
+
+/* Blog Preview Card */
+#card {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    background: var(--white);
+    padding: 24px 24px;
+    border-radius: 20px;
+    box-shadow: 8px 8px #000;
+}
+
+.articleIllustration {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: var(--spacing-200);
+}
+
+.spacing {
+    color: var(--gray-950);
+    margin-bottom: var(--spacing-150);
+}
+
+.learning {
+    background: var(--yellow);
+    color: var(--gray-950);
+    border: none;
+    border-radius: 4px;
+    padding: 4px 12px;
+    font-weight: 800;
+    margin-bottom: var(--spacing-150);
+}
+
+.description {
+    color: var(--gray-500);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Author */
+.author {
+    display: flex;
+}
+
+.author img {
+    width: 32px;
+}
+
+.author p {
+    position: relative;
+    top: 8px;
+    left: 10px;
+    color: var(--gray-950);
+    font-weight: 800;
+
+}
+a {
+    color: var(--gray-950);
+    text-decoration: none;
+}
+/* Title active state */
+a:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
